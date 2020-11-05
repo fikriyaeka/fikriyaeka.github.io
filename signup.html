@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Sign Up - PEWANGI </title>
+    <style>
+            body {
+            background-image: url(satu.jpg);
+            background-repeat: no-repeat;
+            background-size: 1370px 750px;
+        }
+        
+        .panel {
+            border-radius: 30px;
+            box-shadow: 1px 1px 50px #000;
+            font-size: 17px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            padding: 10px;
+            background-color: lightcyan;
+            width: 25%;
+            height: 627px;
+            margin: auto;
+            margin-top: 30px;
+        }
+        
+        label {
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            width: 20%;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            box-shadow: 3px 3px 10px #333;
+            background: rgba(3, 3, 3, .18);
+        }
+        
+        .form-group input {
+            border: 0px;
+            color: black;
+            opacity: 1;
+            font-size: 16px;
+            border-bottom: 2px solid #333;
+            background: white;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+            border-radius: 4px;
+            margin: 11px;
+            width: 124%;
+        }
+        
+        form {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+        }
+        
+        .button button {
+            width: 14%;
+            height: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            color: white;
+            text-align: center;
+            padding: 2px 4px;
+            background: darkslategray;
+            border-radius: 9px;
+            position: absolute;
+            left: 43%;
+            margin-top: 30PX;
+        }
+        
+        .button button:hover {
+            color: white;
+            background-color: lightslategray;
+    </style>
+</head>
+
+<body>
+    <div class="panel">
+        <img src="cancel.png" style="width: 2.7%;position: absolute; left:59%;">
+        <img src="LOGO1.png" style="border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; width:160px ; display: block; margin: auto; margin-bottom: 20px" ;>
+        <div align="center">
+            <table rules="rows">
+                <tr>
+                    <td width=600px align="center" style="background-color: rgba(3,3,3,.1)"><b>Sign Up</b></td>
+                    <td width=600px align="center"><b>Login</b></td>
+                    <tr/>
+            </table>
+            <label style="font-size: 16px; ; background-color:aquamarine; border-bottom-right-radius: 10px ; border-bottom-left-radius: 10px; color: PURPLE;"> "Join Now! Its Free"  </label>
+        </div>
+        <form>
+            <div class="form-group" align="">
+                <label>Email</label>
+                <input type="Email" placeholder="your email address" required autofocus="" autocomplete="off" name="nama">
+                <label>Full Name</label>
+                <input type="text" placeholder="input full name" required autocomplete="off" name="nama">
+                <label>Username</label>
+                <input type="text" placeholder="pick a username" required autocomplete="off" name="nama">
+                <label>Address</label>
+                <input type="text" placeholder="input your address" required autocomplete="off" name="nama">
+                <label>Password</label>
+                <input type="Password" placeholder="make a password" required autocomplete="off" name="nama">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="please confirm password" required autocomplete="off" name="nama">
+
+                <div class="button" align="center">
+                    <button type="submit" name="submit" onclick="submit()">SIGN UP        
+            </div>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>
