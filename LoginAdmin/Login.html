@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pewangi</title>
     <link rel="icon" href="LOGO.png">
+    <script src="../JavaScript/login.js"></script>
     <style>
         body {
             background-image: url(home1.png);
@@ -80,35 +81,29 @@
         <br>
         <a href="../index.html " style="text-decoration:none ;color:#f2f2f2"><img src="cancel.png" style="width: 27px;position: absolute; left:59%;"></a>
         <img src="LOGO1.PNG " style="border-bottom-left-radius:20px ; border-bottom-right-radius:20px ; width:120px ; display:block ; margin:auto ; margin-bottom:10px;">
-        <div>
-            <table rules="rows" align="center">
-                <tr>
-
-
-                    <td width=150px align="center"><a href="../Sign Up/Sign_up.html" style="text-decoration:none ;color:#3D3D3D">Sign Up</a></td>
-
-                    <td width=150px align="center" style="background-color: rgba(3,3,3,.1); color: #3D3D3D">Login</td>
-                    <tr/>
-            </table>
+        <div align="center">
+             <label style="font-weight; ">Login Sebagai Admin !</label><br><br>
+           <hr>
         </div>
         <br>
 
-        <form>
+        <form name="login">
             <div class="form-group" align="center">
-                <label style="font-weight
-                ;">Welcome back, comeon in!</label><br><br>
-                <label>Email</label><br>
-                <input type="Email" class="form-control" placeholder="Email" required autofocus name="nama"><br>
+               
+                <label>Username</label><br>
+                <input type="text" class="form-control" placeholder="Username" required autofocus name="username"><br>
                 <label>Password</label><br>
-                <input type="Password" class="form-control" placeholder="Password" required  name="nama"><br>
+                <input type="Password" class="form-control" placeholder="Password" required  name="password"><br>
 
                 <br>
-                <label style="font-size: 10px">By continuing you agree to our <u>T&Cs</u>. We use your data to offer you a personalised experience. <u>Find out more</u>. </label>
+                <label style="font-size: 10px">Gunakan username pweb dan password uasku untuk masuk sebagai admin <u>PEWANGI</u>. We use your data to offer you a personalised experience. </label>
                 <br><br>
 
                 <div class="button">
 
-                 <a href="../Home1/index.html" style="text-decoration:none ;color:#f2f2f2"> <button type="submit" onclick="submit()" style="font-family:Source Sans Pro;">Login</a>
+
+             <button type="button" onclick="Login()" style="font-family:Source Sans Pro;">Login</button>
+
 
 
                 </div>
