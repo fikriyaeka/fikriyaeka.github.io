@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<title>Pewangi-Admin</title>
+    <link rel="icon" href="LOGO.png">
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<script src="../JavaScript/formjs.js" ></script>
+</head>
+<body>
+	<div class="nav">
+		<ul>
+			<li><a href= ""style="margin-left: 20px; padding-top: 2px"><img src="logo12.png" width="120%" height="150%"></a></li>
+			<li><a href="" style="margin-left: 85px; padding-top: 27px"><b>Dashboard</a></li>
+			<li><a href="pages.html" class="nav2 active"><b>Pages</b></a></li>
+			<li><a href="" class="nav2"><b>Charts</b></a></li>
+			<li><a href="visitors.html" class="nav2 "  ><b>Visitors</b></a></li>
+			<li><a href="" class="nav2"><b>Setting</b></a></li>
+			<li><input class="cari" type="search" name="cari" placeholder="Search.......">
+				<button class="buttonCari"><b>Search</b></button></li>
+			<li><a href="" style="margin-left: 90%; margin-top: -57.1px; "><img src="out.png" width="40%"></a></li>
+		</ul>
+	</div>
+    <div class="panel"> 
+       <h2 class="formatas"> Form Add Category Details</h2>    
+        <form >
+            <div class="form-group" >
+                <label style="font-size: 24px;">Input The Latest!</label>
+            </div><div class="form-group" >
+                <label>Title</label>
+                <input type="text" class="form-control" placeholder="Full Title	" required autofocus autocomplete="off" id="judul">
+                 <label>Address</label>
+                <input type="text" class="form-control" placeholder="Input Location" required autocomplete="off" id="alamat">
+              </div>
+              <div class="form-group" >
+                 <label>Category</label>
+                <select class="form-control" id="kategor">
+               	<option> Select Category</option>
+        		<option>Tourism</option>
+        		<option>Art & Culture</option>
+         		<option>Events</option>
+         		<option>Culinary</option>             
+          		<option>Accomodation</option>
+        		</select>
+                <label>Sub- Category</label>
+                <input type="text" class="form-control" placeholder="Add Sub-Category" required  autocomplete="off" id="sub">
+              	</div>
+              	<div class="form-group" style="justify-content: flex-start;" >
+
+                <label>Description</label>
+                <textarea placeholder="Write Full Description" class="form-control" id="desk"  required style="width: 90%; height: 190px;"> </textarea> 
+                 </div>
+				
+                <div class="button" style="text-align: center; ">
+                 <button type="button" onclick="isitabel()" >Submit</button>
+                 <button type="button" onclick="alert('Canceled Saved')" style="background-color: maroon">Cancel</button>
+            </div>
+            </form> 
+</div> 
+       
+
+  
+<div style="margin: 40px">
+        <h1>List Category Details PEWANGI</h1>
+        <hr />
+
+
+	<table class="table1" id="tabel">
+		<thead>
+		<tr>
+			
+			<th scope="col">Title</th>
+			<th scope="col">Description</th>
+			<th scope="col">Address</th>
+			<th scope="col">Category</th>
+			<th scope="col">Sub-Category</th>
+	
+		</tr>
+</thead>
+
+	<tr>
+			
+			<td>Taman Baluran</td>
+			
+			<td >Taman Nasional Baluran adalah salah satu Taman Nasional di Indonesia yang terletak di wilayah Banyuputih, Situbondo, Jawa Timur, Indonesia. Nama dari Taman Nasional ini diambil dari nama gunung yang berada di daerah ini, yaitu Gunung Baluran.</td>
+			<td>Banyuwangi</td>
+			<td>Tourism</td>
+			<td>Forest</td>
+						
+		</tr>	
+	</table>
+    <hr/>
+	<div class="pagination">
+        <a href="#" class="page"><--</a>
+        <a href="#" class="page">2</a>
+        <a href="#" class="page">3</a>
+        <a href="#" class="page active">4</a>
+		<a href="#" class="page">5</a>
+		<a href="#" class="page">6</a>
+		<a href="#"class="page">--></a>
+	</div>
+
+</body>
+
+</html>
