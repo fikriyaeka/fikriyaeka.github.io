@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pewangi</title>
     <link rel="icon" href="LOGO.png">
+    <script src="../JavaScript/signup.js"></script>
     <style>
         body {
             background-image: url(home1.png);
@@ -91,29 +92,28 @@
         </div>
         <br>
 
-        <form>
+        <form name="sign">
             <div class="form-group" align="center">
                 <label style="font-weight
                 ;">Join Now! It's Free!</label><br><br>
                 <label>Email</label><br>
-                <input type="Email" class="form-control" placeholder="Email" required autofocus autocomplete="off" name="nama"><br>
+                <input type="Email" class="form-control" placeholder="Email" required autofocus autocomplete="off" name="email"><br>
                 <label>Fullname</label><br>
                 <input type="text" class="form-control" placeholder="Fullname" required autocomplete="off" name="nama"><br>
                 <label>Username</label><br>
-                <input type="text" class="form-control" placeholder="Username" required autocomplete="off" name="nama"><br>
+                <input type="text" class="form-control" placeholder="Username" required autocomplete="off" name="user"><br>
                 <label>Address</label><br>
-                <input type="text" class="form-control" placeholder="Address" required autocomplete="off" name="nama"><br>
+                <input type="text" class="form-control" placeholder="Address" required autocomplete="off" name="alamat"><br>
                 <label>Password</label><br>
-                <input type="Password" class="form-control" placeholder="Password" required autocomplete="off" name="nama"><br>
+                <input type="Password" class="form-control" placeholder="Password" required autocomplete="off" name="pass"><br>
                 <label>Verify Password</label><br>
-                <input type="Password" class="form-control" placeholder="Verify Password" required autocomplete="off" name="nama"><br>
+                <input type="Password" class="form-control" placeholder="Verify Password" required autocomplete="off" name="verif"><br>
 
                 <br>
                 <label style="font-size: 10px">By continuing you agree to our <u>T&Cs</u>. We use your data to offer you a personalised experience. <u>Find out more</u>. </label>
                 <br><br>
 
-                <div class="button">
-                   <a href="../Login/Login.html" style="text-decoration:none ;color:#f2f2f2"> <button type="submit" onclick="submit()" style="font-family:Source Sans Pro;">Sign Up</a>
+                <div class="button" > <button type="button" onclick="Signup()" style="font-family:Source Sans Pro;">Sign Up</a>
                 </div>
             </div>
         </form>
