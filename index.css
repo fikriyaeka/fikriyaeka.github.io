@@ -448,14 +448,14 @@
         .footer-custom {
             color: #888;
             font: normal normal 12px/1.4 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-            max-width: 1008px;
-            box-sizing: border-box;
+            max-width: 100%;
             margin: 0 auto;
-            padding: 24px;
+            padding: 10px;
+            margin-left: 7%;
         }
         
         .footer-custom:after {
-            display: table;
+            display: block;
             clear: both;
             content: "";
         }
@@ -474,19 +474,16 @@
         
         .footer-list-wrap {
             float: left;
-            box-sizing: border-box;
+            box-sizing: content-box;
         }
         
         @media only screen {
             .footer-list-wrap {
-                width: 25%;
+                width: 19%;
             }
         }
         
-        .ftr-links-sub {
-            padding: 0;
-            margin: 0;
-        }
+       
         
         .ftr-links-sub:after {
             display: table;
@@ -502,7 +499,7 @@
             color: #888;
             font: normal normal 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
             text-transform: uppercase;
-            width: 150px;
+           
         }
         
         .footer-custom a,
@@ -512,11 +509,11 @@
             text-decoration: none;
             color: #888;
             padding: 3px 0;
-            display: block;
+          
         }
         
         .footer-custom .footer-legal a {
-            display: inline;
+            display: flex;
         }
         
         .footer-custom a:hover,
@@ -538,52 +535,7 @@
                 border-bottom-left-radius: 24px;
                 border-bottom-right-radius: 24px;
             }
-            .footer-email {
-                text-align: center;
-            }
-            #ftrEmailForm {
-                height: 44px;
-            }
-            #ftrEmailForm #ftrEmailInput {
-                background: none repeat scroll 0 0 #FFF;
-                border: 1px solid #D6D6D6;
-                box-sizing: border-box;
-                color: #888;
-                float: left;
-                font: normal normal 14px/1.4 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-                padding: 0px;
-                width: 50%;
-                height: 100%;
-            }
-            #ftrEmailForm #ftrEmailInput:hover {
-                border: 1px solid #888;
-            }
-            #ftrEmailForm #ftrEmailInput:focus {
-                border: 1px solid #ef9223;
-                outline: #ef9223 auto 5px;
-            }
-            #ftrEmailForm .button {
-                width: 50%;
-                height: 100%;
-                padding: 5px;
-                float: left;
-                border: 1px solid #DFDFDF;
-                box-sizing: border-box;
-                color: #000;
-                font: normal bold 18px/1 BebasFamily, BebasNeueRegular, "Bebas Neue", Helvetica, Arial, sans-serif;
-                text-align: center;
-                text-transform: uppercase;
-                background: silver;
-                cursor: pointer;
-                vertical-align: middle;
-                outline: none;
-            }
-            #ftrEmailForm .button:hover,
-            #ftrEmailForm .button:active {
-                background: black;
-                color: #FFF;
-                outline: none;
-            }
+         
             @media only screen and (min-width: 768px) {
                 .footer-lists {
                     width: 100%;
@@ -593,7 +545,7 @@
                     float: left;
                     text-align: left;
                 }
-                @media only screen and (min-width: 1008px) {
+            @media only screen and (min-width: 1008px) {
                     .footer-lists {
                         width: 80%;
                         float: left;

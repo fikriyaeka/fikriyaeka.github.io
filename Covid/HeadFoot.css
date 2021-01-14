@@ -178,185 +178,138 @@
                     text-decoration: none;
                 }
                 
-                body,
-                html {
-                    margin: 0;
-                    padding: 0;
-                }
                 
-                .footer-warna {
-                    background-color: #113448;
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .footer-warna {
+            background-color: #113448;
+            width: 100%;
+        }
+        
+        .footer-custom {
+            color: #888;
+            font: normal normal 12px/1.4 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 10px;
+            margin-left: 7%;
+        }
+        
+        .footer-custom:after {
+            display: block;
+            clear: both;
+            content: "";
+        }
+        
+        .ftr-hdr {
+            color: #EFEFEF;
+            font: 22px/1.4 'BebasNeueRegular', BebasNeue, 'Bebas Neue', Arial, sans-serif;
+            margin: 1em 0 0;
+        }
+        
+        @media only screen and (min-width: 768px) {
+            .ftr-hdr {
+                font-size: 18px;
+            }
+        }
+        
+        .footer-list-wrap {
+            float: left;
+            box-sizing: content-box;
+        }
+        
+        @media only screen {
+            .footer-list-wrap {
+                width: 19%;
+            }
+        }
+        
+       
+        
+        .ftr-links-sub:after {
+            display: table;
+            clear: both;
+            content: "";
+        }
+        
+        .ftr-links-sub li {
+            display: block;
+            list-style-type: none;
+            margin: 0;
+            padding: 3px 0;
+            color: #888;
+            font: normal normal 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            text-transform: uppercase;
+           
+        }
+        
+        .footer-custom a,
+        .footer-custom a:link,
+        .footer-custom a:visited,
+        .ftr-links-sub li .link {
+            text-decoration: none;
+            color: #888;
+            padding: 3px 0;
+            
+        }
+        
+        .footer-custom .footer-legal a {
+            display: flex;
+        }
+        
+        .footer-custom a:hover,
+        .footer-custom a:active,
+        .ftr-links-sub li .link:hover {
+            text-decoration: underline;
+            color: #888;
+            cursor: pointer;
+        }
+        
+        @media only screen and (min-width: 768px) {
+            .footer-custom a,
+            .footer-custom a:link,
+            .footer-custom a:visited,
+            .ftr-links-sub li .link {
+                padding: 0;
+            }
+            .logfot {
+                border-bottom-left-radius: 24px;
+                border-bottom-right-radius: 24px;
+            }
+         
+            @media only screen and (min-width: 768px) {
+                .footer-lists {
                     width: 100%;
                 }
-                
-                .footer-custom {
-                    color: #888;
-                    font: normal normal 12px/1.4 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-                    max-width: 1008px;
-                    box-sizing: border-box;
-                    margin: 0 auto;
-                    padding: 24px;
-                }
-                
-                .footer-custom:after {
-                    display: table;
-                    clear: both;
-                    content: "";
-                }
-                
-                .ftr-hdr {
-                    color: #EFEFEF;
-                    font: 22px/1.4 'BebasNeueRegular', BebasNeue, 'Bebas Neue', Arial, sans-serif;
-                    margin: 1em 0 0;
-                }
-                
-                @media only screen and (min-width: 768px) {
-                    .ftr-hdr {
-                        font-size: 18px;
-                    }
-                }
-                
-                .footer-list-wrap {
+                .footer-email {
+                    width: 50%;
                     float: left;
-                    box-sizing: border-box;
+                    text-align: left;
                 }
-                
-                @media only screen {
-                    .footer-list-wrap {
-                        width: 25%;
-                    }
-                }
-                
-                .ftr-links-sub {
-                    padding: 0;
-                    margin: 0;
-                }
-                
-                .ftr-links-sub:after {
-                    display: table;
-                    clear: both;
-                    content: "";
-                }
-                
-                .ftr-links-sub li {
-                    display: block;
-                    list-style-type: none;
-                    margin: 0;
-                    padding: 3px 0;
-                    color: #888;
-                    font: normal normal 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-                    text-transform: uppercase;
-                    width: 150px;
-                }
-                
-                .footer-custom a,
-                .footer-custom a:link,
-                .footer-custom a:visited,
-                .ftr-links-sub li .link {
-                    text-decoration: none;
-                    color: #888;
-                    padding: 3px 0;
-                    display: block;
-                }
-                
-                .footer-custom .footer-legal a {
-                    display: inline;
-                }
-                
-                .footer-custom a:hover,
-                .footer-custom a:active,
-                .ftr-links-sub li .link:hover {
-                    text-decoration: underline;
-                    color: #888;
-                    cursor: pointer;
-                }
-                
-                @media only screen and (min-width: 768px) {
-                    .footer-custom a,
-                    .footer-custom a:link,
-                    .footer-custom a:visited,
-                    .ftr-links-sub li .link {
-                        padding: 0;
-                    }
-                    .logfot {
-                        border-bottom-left-radius: 24px;
-                        border-bottom-right-radius: 24px;
+            @media only screen and (min-width: 1008px) {
+                    .footer-lists {
+                        width: 80%;
+                        float: left;
                     }
                     .footer-email {
+                        width: 33.3333%;
+                    }
+                    .copyright {
+                        padding-top: 1rem;
+                        padding-bottom: 0.5rem;
+                        background-color: #113448;
                         text-align: center;
                     }
-                    #ftrEmailForm {
-                        height: 44px;
+                    .copyright p,
+                    .copyright a {
+                        color: #dfe5ec;
+                        text-decoration: none;
                     }
-                    #ftrEmailForm #ftrEmailInput {
-                        background: none repeat scroll 0 0 #FFF;
-                        border: 1px solid #D6D6D6;
-                        box-sizing: border-box;
-                        color: #888;
-                        float: left;
-                        font: normal normal 14px/1.4 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-                        padding: 0px;
-                        width: 50%;
-                        height: 100%;
-                    }
-                    #ftrEmailForm #ftrEmailInput:hover {
-                        border: 1px solid #888;
-                    }
-                    #ftrEmailForm #ftrEmailInput:focus {
-                        border: 1px solid #ef9223;
-                        outline: #ef9223 auto 5px;
-                    }
-                    #ftrEmailForm .button {
-                        width: 50%;
-                        height: 100%;
-                        padding: 5px;
-                        float: left;
-                        border: 1px solid #DFDFDF;
-                        box-sizing: border-box;
-                        color: #000;
-                        font: normal bold 18px/1 BebasFamily, BebasNeueRegular, "Bebas Neue", Helvetica, Arial, sans-serif;
-                        text-align: center;
-                        text-transform: uppercase;
-                        background: silver;
-                        cursor: pointer;
-                        vertical-align: middle;
-                        outline: none;
-                    }
-                    #ftrEmailForm .button:hover,
-                    #ftrEmailForm .button:active {
-                        background: black;
-                        color: #FFF;
-                        outline: none;
-                    }
-                    @media only screen and (min-width: 768px) {
-                        .footer-lists {
-                            width: 100%;
-                        }
-                        .footer-email {
-                            width: 50%;
-                            float: left;
-                            text-align: left;
-                        }
-                        @media only screen and (min-width: 1008px) {
-                            .footer-lists {
-                                width: 80%;
-                                float: left;
-                            }
-                            .footer-email {
-                                width: 33.3333%;
-                            }
-                            .copyright {
-                                padding-top: 1rem;
-                                padding-bottom: 0.5rem;
-                                background-color: #113448;
-                                text-align: center;
-                            }
-                            .copyright p,
-                            .copyright a {
-                                color: #dfe5ec;
-                                text-decoration: none;
-                            }
-                        }
+                }
                         section {
                             padding: 50px 0;
                         }
