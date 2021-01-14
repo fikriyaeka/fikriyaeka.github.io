@@ -9,7 +9,7 @@ if (email1=="" && pass1 == "" )
 {alert(" Masukkan Username dan Password dengan Benar ");}
 else
 { alert("Selamat Sign Up  Anda Berhasil "); 
-  window.location = "../HOme1/index.html" } 
+  window.location = "../Home1/index.html" } 
 
 
 }
