@@ -10,12 +10,65 @@
 </head>
 
 <body>
+
+    <input type="checkbox" id="check">
+    <div class="sidebar">
+        <ul class="tab">
+            <li class="dropdown-a"><a href="Profil.html">Religion</a>
+                <ul class="isi-dropdown-a">
+                    <li><a href="../Kategori/ReligiousAct.html">Religious Activity</a></li>
+                    <li><a href="../Kategori/Worship.html">Worship Place</a></li>
+                    <li><a href="../Kategori/ReligiousHoli.html">Religious Holidays</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown-a"><a href="">Accomodation</a>
+                <ul class="isi-dropdown-a">
+                    <li><a href="../Kategori/Hotel.html">Hotel</a></li>
+                    <li><a href="../Kategori/Transportation.html">Transportation</a></li>
+                    <li><a href="../Kategori/ShoppingCenter.html">Shopping Center</a></li>
+                    <li><a href="../Kategori/Restauran.html">Restaurant</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-a"><a href="">Culinary</a>
+                <ul class="isi-dropdown-a">
+                    <li><a href="../Kategori/TraditionalFood.html">Traditional Food</a></li>
+                    <li><a href="../Kategori/Pastries.html">Pastries and Cakes</a></li>
+                    <li><a href="../Kategori/FastFood.html">Fast Food</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-a"><a href="">Events</a>
+                <ul class="isi-dropdown-a">
+                    <li><a href="../Kategori/Festival.html">Festival</a></li>
+                    <li><a href="../Kategori/Feast.html">Feast</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-a"><a href="">Art & Culture</a>
+                <ul class="isi-dropdown-a">
+                    <li><a href="../Kategori/Customs.html">Customs</a></li>
+                    <li><a href="../Kategori/Art.html">Art</a></li>
+                    <li><a href="../Kategori/Historical.html">Historical</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-a"><a href="">Tourism</a>
+                <ul class="isi-dropdown-a">
+                    <li><a href="../Kategori/Waterfall.html">Waterfall</a></li>
+                    <li><a href="../Kategori/Beach.html">Beach</a></li>
+                    <li><a href="../Kategori/Mountains.html">Mountains</a></li>
+                    <li><a href="../Kategori/Forest.html">Forest</a></li>
+                    <li><a href="../Kategori/Cave.html">Cave</a></li>
+                    <li><a href="../Kategori/Bay.html">Bay</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
     <header id="header" class="header">
         <div class="menu">
             <ul class="tab">
-                <a href="../Home1/index.html"><img class="logo" src="images/LOGO Kiri Atas.PNG"></a>
+                <a href="../Home/index.html"><img class="logo" src="images/LOGO Kiri Atas.PNG"></a>
                 <li class="akun"> <img class="profil" src="images/Logo Profil.png"><a href="../Profil/Profil.html"><label>BOBOHOO</label></a></li>
-                <li class="dropdown"><a href="Profil.html">Religion</a>
+                <li class="dropdown" id="dropdown-1"><a href="Profil.html">Religion</a>
                     <ul class="isi-dropdown">
                         <li><a href="../Kategori/ReligiousAct.html">Religious Activity</a></li>
                         <li><a href="../Kategori/Worship.html">Worship Place</a></li>
@@ -23,7 +76,7 @@
                     </ul>
                 </li>
 
-                <li class="dropdown"><a href="">Accomodation</a>
+                <li class="dropdown" id="dropdown-2"><a href="">Accomodation</a>
                     <ul class="isi-dropdown">
                         <li><a href="../Kategori/Hotel.html">Hotel</a></li>
                         <li><a href="../Kategori/Transportation.html">Transportation</a></li>
@@ -31,27 +84,27 @@
                         <li><a href="../Kategori/Restauran.html">Restaurant</a></li>
                     </ul>
                 </li>
-                <li class="dropdown"><a href="">Culinary</a>
+                <li class="dropdown" id="dropdown-3"><a href="">Culinary</a>
                     <ul class="isi-dropdown">
                         <li><a href="../Kategori/TraditionalFood.html">Traditional Food</a></li>
                         <li><a href="../Kategori/Pastries.html">Pastries and Cakes</a></li>
                         <li><a href="../Kategori/FastFood.html">Fast Food</a></li>
                     </ul>
                 </li>
-                <li class="dropdown"><a href="">Events</a>
+                <li class="dropdown" id="dropdown-4"><a href="">Events</a>
                     <ul class="isi-dropdown">
                         <li><a href="../Kategori/Festival.html">Festival</a></li>
                         <li><a href="../Kategori/Feast.html">Feast</a></li>
                     </ul>
                 </li>
-                <li class="dropdown"><a href="">Art & Culture</a>
+                <li class="dropdown" id="dropdown-5"><a href="">Art & Culture</a>
                     <ul class="isi-dropdown">
                         <li><a href="../Kategori/Customs.html">Customs</a></li>
                         <li><a href="../Kategori/Art.html">Art</a></li>
                         <li><a href="../Kategori/Historical.html">Historical</a></li>
                     </ul>
                 </li>
-                <li class="dropdown"><a href="">Tourism</a>
+                <li class="dropdown" id="dropdown-6"><a href="">Tourism</a>
                     <ul class="isi-dropdown">
                         <li><a href="../Kategori/Waterfall.html">Waterfall</a></li>
                         <li><a href="../Kategori/Beach.html">Beach</a></li>
@@ -61,6 +114,9 @@
                         <li><a href="../Kategori/Bay.html">Bay</a></li>
                     </ul>
                 </li>
+                <label for="check" class="mobile-menu">
+                    <img width=" 30 " height=" 30 " src="images/list.svg">
+                </label>
             </ul>
         </div>
         <div class="header-content">
@@ -424,7 +480,7 @@
 
     <!--BATAS ISI-->
 
-     <div class="footer-warna ">
+    <div class="footer-warna ">
         <img class="logfot " src="images/Logo Footer.png ">
         <div class="footer-custom ">
             <div class="footer-lists ">
@@ -446,19 +502,19 @@
                 <div class=" footer-list-wrap ">
                     <h6 class=" ftr-hdr ">PAYMENT METHOD</h6>
                     <ul style=" list-style-type: none; ">
-                        <li> 
-                                <img width=" 48 " height=" 24 "  src="images/BCA.png ">
-                                <img width=" 48 " height=" 24 "  src="images/BRI.png ">
-                      
-                            
-                                <img width=" 48 " height=" 24 " src="images/Mandiri.png ">
-                                <img width=" 48 " height=" 24 " src="images/Mastercard.png ">
-                         
-                     
-                           
-                                <img width=" 48 " height=" 24 "   src="images/Indomaret.png ">
-                                <img width=" 48 " height=" 24 " src="images/Alfamaret.png ">
-                           
+                        <li>
+                            <img width=" 48 " height=" 24 " src="images/BCA.png ">
+                            <img width=" 48 " height=" 24 " src="images/BRI.png ">
+
+
+                            <img width=" 48 " height=" 24 " src="images/Mandiri.png ">
+                            <img width=" 48 " height=" 24 " src="images/Mastercard.png ">
+
+
+
+                            <img width=" 48 " height=" 24 " src="images/Indomaret.png ">
+                            <img width=" 48 " height=" 24 " src="images/Alfamaret.png ">
+
                         </li>
                     </ul>
                 </div>
@@ -496,14 +552,14 @@
 
                             <input type="submit " class="button " value="SUBMIT " />
                         </form>
-                       </div>
-                
-                
                     </div>
+
+
                 </div>
             </div>
         </div>
-    
+    </div>
+
     <div class=" copyright ">
 
         <p class=" p-small "> © Copyright 2020 Pewangi All Rights</p>

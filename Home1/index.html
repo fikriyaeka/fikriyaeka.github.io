@@ -10,12 +10,65 @@
 </head>
 
 <body>
+
+    <input type="checkbox" id="check">
+    <div class="sidebar">
+        <ul class="tab">
+            <li class="dropdown-a"><a href="Profil.html">Religion</a>
+                <ul class="isi-dropdown-a">
+                    <li><a href="../Kategori/ReligiousAct.html">Religious Activity</a></li>
+                    <li><a href="../Kategori/Worship.html">Worship Place</a></li>
+                    <li><a href="../Kategori/ReligiousHoli.html">Religious Holidays</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown-a"><a href="">Accomodation</a>
+                <ul class="isi-dropdown-a">
+                    <li><a href="../Kategori/Hotel.html">Hotel</a></li>
+                    <li><a href="../Kategori/Transportation.html">Transportation</a></li>
+                    <li><a href="../Kategori/ShoppingCenter.html">Shopping Center</a></li>
+                    <li><a href="../Kategori/Restauran.html">Restaurant</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-a"><a href="">Culinary</a>
+                <ul class="isi-dropdown-a">
+                    <li><a href="../Kategori/TraditionalFood.html">Traditional Food</a></li>
+                    <li><a href="../Kategori/Pastries.html">Pastries and Cakes</a></li>
+                    <li><a href="../Kategori/FastFood.html">Fast Food</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-a"><a href="">Events</a>
+                <ul class="isi-dropdown-a">
+                    <li><a href="../Kategori/Festival.html">Festival</a></li>
+                    <li><a href="../Kategori/Feast.html">Feast</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-a"><a href="">Art & Culture</a>
+                <ul class="isi-dropdown-a">
+                    <li><a href="../Kategori/Customs.html">Customs</a></li>
+                    <li><a href="../Kategori/Art.html">Art</a></li>
+                    <li><a href="../Kategori/Historical.html">Historical</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-a"><a href="">Tourism</a>
+                <ul class="isi-dropdown-a">
+                    <li><a href="../Kategori/Waterfall.html">Waterfall</a></li>
+                    <li><a href="../Kategori/Beach.html">Beach</a></li>
+                    <li><a href="../Kategori/Mountains.html">Mountains</a></li>
+                    <li><a href="../Kategori/Forest.html">Forest</a></li>
+                    <li><a href="../Kategori/Cave.html">Cave</a></li>
+                    <li><a href="../Kategori/Bay.html">Bay</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
     <header id="header" class="header">
         <div class="menu">
             <ul class="tab">
                 <a href="../Home/index.html"><img class="logo" src="images/LOGO Kiri Atas.PNG"></a>
                 <li class="akun"> <img class="profil" src="images/Logo Profil.png"><a href="../Profil/Profil.html"><label>BOBOHOO</label></a></li>
-                <li class="dropdown"><a href="Profil.html">Religion</a>
+                <li class="dropdown" id="dropdown-1"><a href="Profil.html">Religion</a>
                     <ul class="isi-dropdown">
                         <li><a href="../Kategori/ReligiousAct.html">Religious Activity</a></li>
                         <li><a href="../Kategori/Worship.html">Worship Place</a></li>
@@ -23,42 +76,35 @@
                     </ul>
                 </li>
 
-                <li class="dropdown"><a href="">Accomodation</a>
+                <li class="dropdown" id="dropdown-2"><a href="">Accomodation</a>
                     <ul class="isi-dropdown">
-
                         <li><a href="../Kategori/Hotel.html">Hotel</a></li>
                         <li><a href="../Kategori/Transportation.html">Transportation</a></li>
                         <li><a href="../Kategori/ShoppingCenter.html">Shopping Center</a></li>
                         <li><a href="../Kategori/Restauran.html">Restaurant</a></li>
-
-                        <li><a href="../kategori/hotel.html">Hotel</a></li>
-                        <li><a href="#">Transportation</a></li>
-                        <li><a href="#">Shopping Center</a></li>
-                        <li><a href="#">Retaurant</a></li>
-
                     </ul>
                 </li>
-                <li class="dropdown"><a href="">Culinary</a>
+                <li class="dropdown" id="dropdown-3"><a href="">Culinary</a>
                     <ul class="isi-dropdown">
                         <li><a href="../Kategori/TraditionalFood.html">Traditional Food</a></li>
                         <li><a href="../Kategori/Pastries.html">Pastries and Cakes</a></li>
                         <li><a href="../Kategori/FastFood.html">Fast Food</a></li>
                     </ul>
                 </li>
-                <li class="dropdown"><a href="">Events</a>
+                <li class="dropdown" id="dropdown-4"><a href="">Events</a>
                     <ul class="isi-dropdown">
                         <li><a href="../Kategori/Festival.html">Festival</a></li>
                         <li><a href="../Kategori/Feast.html">Feast</a></li>
                     </ul>
                 </li>
-                <li class="dropdown"><a href="">Art & Culture</a>
+                <li class="dropdown" id="dropdown-5"><a href="">Art & Culture</a>
                     <ul class="isi-dropdown">
                         <li><a href="../Kategori/Customs.html">Customs</a></li>
                         <li><a href="../Kategori/Art.html">Art</a></li>
                         <li><a href="../Kategori/Historical.html">Historical</a></li>
                     </ul>
                 </li>
-                <li class="dropdown"><a href="">Tourism</a>
+                <li class="dropdown" id="dropdown-6"><a href="">Tourism</a>
                     <ul class="isi-dropdown">
                         <li><a href="../Kategori/Waterfall.html">Waterfall</a></li>
                         <li><a href="../Kategori/Beach.html">Beach</a></li>
@@ -68,9 +114,12 @@
                         <li><a href="../Kategori/Bay.html">Bay</a></li>
                     </ul>
                 </li>
+                <label for="check" class="mobile-menu">
+                    <img width=" 30 " height=" 30 " src="images/list.svg">
+                </label>
             </ul>
         </div>
-          <div class="header-content">
+        <div class="header-content">
             <p>Know The Wealth Of <br><br> <b>Banyuwangi City</b></p>
             <input class="cari" type="search" name="cari" placeholder="Search.......">
             <button class="buttonCari"><b>Search</b></button></li>
@@ -130,7 +179,7 @@
     <hr>
     <a class="btn-solid-lg page-scroll" href="../Covid/Covid.html"> PREVENT COVID - 19 </a>
 
-    <div class="cards-1" style="margin-left: 15%">
+    <div class="cards-1">
         <div class="card">
             <div class="card-body">
                 <a href="../Covid/Covid.html">
@@ -139,7 +188,7 @@
                 <h4 class="card-title" style="text-align: center;">Gunakan Masker</h4>
             </div>
         </div>
-        <div class="card" style="margin-left: 100px">
+        <div class="card">
             <div class="card-body">
                 <a href="../Covid/Covid.html">
                     <img class="img-fluid" src="images/Cuci tangan.svg" alt="alternative">
@@ -147,7 +196,7 @@
                 <h4 class="card-title" style="text-align: center;">Cuci Tangan</h4>
             </div>
         </div>
-        <div class="card" style="margin-left: 150px">
+        <div class="card">
             <div class="card-body">
                 <a href="../Covid/Covid.html">
                     <img class="img-fluid" src="images/Jaga Jarak.svg" alt="alternative">
@@ -156,14 +205,14 @@
             </div>
         </div>
         <div class="card">
-            <div class="card-body" style="margin-left: 70px">
+            <div class="card-body">
                 <a href="../Covid/Covid.html">
                     <img class="img-fluid" src="images/Hand Sanitizer.svg" alt="alternative">
                 </a>
                 <h4 class="card-title" style="text-align: center;">Gunakan Hand Sanitizer</h4>
             </div>
         </div>
-        <div class="card" style="margin-left: 70px">
+        <div class="card">
             <div class="card-body">
                 <a href="../Covid/Covid.html">
                     <img class="img-fluid" src="images/Pesan Tiket.svg" alt="alternative">
@@ -171,7 +220,7 @@
                 <h4 class="card-title" style="text-align: center;">Pemesanan Tiket Online</h4>
             </div>
         </div>
-        <div class="card" style="margin-left: 110px">
+        <div class="card">
             <div class="card-body">
                 <a href="../Covid/Covid.html">
                     <img class="img-fluid" src="images/Dilarang Berkerumun.svg" alt="alternative">
@@ -441,7 +490,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer-list-wrap   ">
+                <div class="footer-list-wrap ">
                     <h6 class="ftr-hdr ">NEWSLETTER</h6>
                     <div id="ftr-email " class="ftr-email-form ">
                         <form id="ftrEmailForm " method="post " action="http://em.art.com/pub/rf ">
