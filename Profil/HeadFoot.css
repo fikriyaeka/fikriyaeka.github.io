@@ -123,6 +123,25 @@ li.dropdown {
     margin-left: -4px;
     outline: none;
 }
+.button button{
+    width: 80%;
+    height: 30px;
+    font-size: 18px;
+    font-weight:bold;
+    cursor: pointer;
+    border: none;
+    background: cadetblue;
+    border-radius: 9px;
+    margin-left: 20%;
+    margin-bottom: 10%;  
+ 
+}
+.button button:hover{
+    color: white;
+    background-color: lightslategray ;
+    outline: none;
+}
+
 
 * {
     box-sizing: border-box
@@ -280,22 +299,7 @@ body {
     margin: 0px;
 }
 
-.kotak-1 {
-    display: flex;
-    /*Deklarasi display flex + antek2nya*/
-    justify-content: space-between;
-}
 
-
-/*auto margin antar konten didalamnya*/
-
-.kotak-1 .isi {
-    width: 30%;
-    /*lebarnya terserah, dikira-kira aja*/
-    background: #ffbb27;
-    margin: 10px;
-    padding: 10px;
-}
 
 .isi-garis {
     width: 95%;
