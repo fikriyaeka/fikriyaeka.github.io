@@ -7,6 +7,9 @@
     <title>Pewangi</title>
     <link rel="icon" href="images/LOGO.png">
     <link rel="stylesheet" href="styles.css">
+    <script src="../JavaScript/slide.js">
+    </script>
+
 </head>
 
 <body>
@@ -152,27 +155,7 @@
     </div>
 
     <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 4000); // Change image every 2 seconds
-        }
+        showSlides()
     </script>
 
 
@@ -182,7 +165,7 @@
     <div class="cards-1">
         <div class="card">
             <div class="card-body">
-                <a href="Covid/Covid.html">
+                <a href="../Covid/Covid.html">
                     <img class="img-fluid" src="images/Pakai Masker.svg" alt="alternative">
                 </a>
                 <h4 class="card-title" style="text-align: center;">Gunakan Masker</h4>
@@ -190,7 +173,7 @@
         </div>
         <div class="card">
             <div class="card-body">
-                <a href="Covid/Covid.html">
+                <a href="../Covid/Covid.html">
                     <img class="img-fluid" src="images/Cuci tangan.svg" alt="alternative">
                 </a>
                 <h4 class="card-title" style="text-align: center;">Cuci Tangan</h4>
@@ -198,7 +181,7 @@
         </div>
         <div class="card">
             <div class="card-body">
-                <a href="Covid/Covid.html">
+                <a href="../Covid/Covid.html">
                     <img class="img-fluid" src="images/Jaga Jarak.svg" alt="alternative">
                 </a>
                 <h4 class="card-title" style="text-align: center;">Jaga Jarak</h4>
@@ -208,7 +191,7 @@
     <div class="cards-1">
         <div class="card">
             <div class="card-body">
-                <a href="Covid/Covid.html">
+                <a href="../Covid/Covid.html">
                     <img class="img-fluid" src="images/Hand Sanitizer.svg" alt="alternative">
                 </a>
                 <h4 class="card-title" style="text-align: center;">Gunakan Hand Sanitizer</h4>
@@ -216,7 +199,7 @@
         </div>
         <div class="card">
             <div class="card-body">
-                <a href="Covid/Covid.html">
+                <a href="../Covid/Covid.html">
                     <img class="img-fluid" src="images/Pesan Tiket.svg" alt="alternative">
                 </a>
                 <h4 class="card-title" style="text-align: center;">Pemesanan Tiket Online</h4>
@@ -224,7 +207,7 @@
         </div>
         <div class="card">
             <div class="card-body">
-                <a href="Covid/Covid.html">
+                <a href="../Covid/Covid.html">
                     <img class="img-fluid" src="images/Dilarang Berkerumun.svg" alt="alternative">
                 </a>
                 <h4 class="card-title" style="text-align: center;">Pembatasan Jumlah Pengunjung</h4>
